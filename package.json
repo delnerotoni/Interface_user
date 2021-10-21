@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \" npm run client \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Thony",
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -17,6 +22,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "concurrently": "^6.3.0",
     "nodemon": "^2.0.13"
   }
 }
