@@ -1,0 +1,105 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:100%;
+    background-color: white;
+
+    }
+    
+.login-logo img{
+    width: 250px;
+    height: 250px;
+}
+
+.login-right h1 {
+
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    text-align: center;  
+}
+
+.login-right h4 {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color:grey
+    
+}
+
+.login-InputEmail {
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 3px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+
+.login-InputEmail svg {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.login-InputEmail input {
+
+    width: 65%;
+    outline-width: 0;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.login-InputPassword {
+
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 3px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.login-InputPassword svg {
+    margin-left: 20px;
+    font-size: 25px;
+
+}
+
+.login-InputPassword input {
+
+    width: 85%;
+    outline-width: 0;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.login-right button {
+
+    width: 70%;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 10x;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+

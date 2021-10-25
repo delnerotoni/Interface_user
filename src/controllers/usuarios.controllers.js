@@ -43,6 +43,28 @@ module.exports = {
          const data = {nome_usuario, email_usuario, senha_usuario, tipo_usuario};
          const user = await Usuario.findOneAndUpdate({_id},data,{new:true});
          res.json(user);
+     }, 
+
+     async login(req, res){
+         const {email, senha} = req.body;
+         console.log("Chegou aqui...");
+         const user = Usuario.findOne({email_usuario: email, tipo_usuario:1}, function(err,user){
+             if(err){
+                 console.log(err);
+                 res.status(200).json({erro: "Erro no servidor, por favor tente novamente"})
+             } else if (!user){
+                res.status(200).json({status:2, error: "Usuário ou senha inválidos"});
+
+             } else {
+                console.log(user);
+                console.log("Usuário localizado!!");
+                res.status(200).json({status:1, user});
+
+             } 
+
+
+             
+         })
      }
     
 }
